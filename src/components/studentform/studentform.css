@@ -1,0 +1,173 @@
+html, body {
+    height: 100%; /* Ensure the html and body take full height */
+    margin: 0; /* Remove default margin */
+}
+.studentform-background-container {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0; /* Ensure no margin is applied */
+    padding: 0;
+     /* Ensure no padding is applied */
+     opacity: 0;
+     transform: translateY(-20px);
+     animation: fadeIn 0.5s forwards ease-in;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.name-container{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.main-form-container {
+    max-width: 900px;
+    width: 100%;
+    background:linear-gradient(to right, wheat, #fcb8e7, #faf59d);
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%; 
+}
+
+
+
+
+
+.basic-info-container{
+    background-color: #d4cece;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 45px;
+    
+}
+.basic-info-text{
+    color:black;
+    font-weight: bold;  
+    padding-bottom: 10px;
+}
+.student-image{
+    max-height: 150px;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.drop-down{
+    
+    border: 0px;
+}
+
+.ant-form-item .ant-input:focus {
+    background-color: transparent !important;  
+    border-color: #d9d9d9; 
+  }
+
+  
+.student-basic-info-form{
+    padding: 20px;
+}
+.basic-Education-container{
+    background-color: #d4cece;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 45px;   
+}
+.student-basic-info-form{
+    background-color: white;
+    width: 900px;
+}
+
+.ssc-form {
+    width: 400px;
+    background-color: white; 
+
+    height: 260px;
+    
+}
+.ssc-button{
+    background-color: #003366;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.ssc-form-title {
+    text-align: center; 
+    color: #004f7c;
+    margin-bottom: 20px; 
+}
+.ssc-button:hover{
+    background-color: #003a5a;
+}
+
+.input{
+    transition: all 0.3s ease;
+}
+
+.input:hover{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transform: scale(1.02);
+}
+
+.submitButton {
+    transition: background-color 0.3s ease, transform 0.2s;
+    background-color: #007bff;
+    color: white;
+  }
+  
+.submitButton:hover {
+    background-color: #109927 !important;
+    color:white !important;
+    border:none !important;
+    transform: scale(1.05);
+}
+
+.inputContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floatingLabel {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  color: #888;
+}
+
+.inputField:focus + .floatingLabel,
+.inputField:not(:placeholder-shown) + .floatingLabel {
+  top: -5px;
+  font-size: 0.85em;
+  color: #007bff;
+}
